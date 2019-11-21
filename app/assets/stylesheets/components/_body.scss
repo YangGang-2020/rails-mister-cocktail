@@ -1,8 +1,46 @@
 body {
-  background-color: blue;
+  background-color: lightblue;
+  background-image: url("paper.gif");
 }
 
-.background-red {
+.background {
   background-color: red;
   height: 100vh;
+
+}
+
+h1 {
+  background-color: pink;
+}
+
+div {
+  background-color: lightblue;
+}
+
+p {
+  background-color: turquoise;
+  list-style-type: circle;
+}
+
+a {
+  list-style-type: circle;
+}
+
+ul.b {
+  list-style-type: square;
+}
+
+ol.c {
+  list-style-type: upper-roman;
+}
+
+ol.d {
+  list-style-type: lower-alpha;
+}
+
+div.gallery {
+  margin: 5px;
+  border: 1px solid #ccc;
+  float: left;
+  width: 180px;
 }
