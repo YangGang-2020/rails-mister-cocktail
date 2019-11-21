@@ -3,7 +3,7 @@ class DosesController < ApplicationController
 def new
     @cocktail = Cocktail.find(params[:cocktail_id])
     @ingredient = Ingredient.all
-    @dose = Dose.new
+    @dose = dose.cocktail
 end
 
 def create

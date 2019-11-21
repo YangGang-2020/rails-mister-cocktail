@@ -19,4 +19,4 @@ Dose.create(cocktail: margarita, ingredient: lemon, description: "3 slices")
 Cocktail.create(name: "Mojito")
 mojito = Cocktail.find_by(name: "Mojito")
 
-Dose.create(cocktail: mojito, ingredient: mint_leaves, description: "3 leaves")
+# Dose.create(cocktail: mojito, ingredient: mint_leaves, description: "3 leaves")
