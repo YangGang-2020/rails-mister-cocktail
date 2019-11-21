@@ -1,5 +1,8 @@
 <div class="background-grey">
 <!--   <img src="" alt="Cocktail"> -->
+
+<%= cl_image_tag @cocktail.photo, height: 300, width: 400, crop: :fill %>
+
   <h1>More infos on <%= @cocktail.name %></h1>
   <p> Add this:
     <% @cocktail.doses.each do |dose|%>
@@ -13,6 +16,8 @@
 <p>
   <span id="banner-typed-text"></span>
 </p>
+<%= cl_image_tag @cocktail.photo, height: 300, width: 400, crop: :fill %>
+
 
 <img alt="Image result for cocktail image for html"" class="n3VNCb" src="https://www.seriouseats.com/recipes/images/2015/10/20150727-NuttyMartinez-Cocktail-Elana-Lepkowski.jpg" data-noaft="1" jsname="HiaYvf" jsaction="load:XAeZkd;" style="width: 400px; height: 300px; margin: 0px;">
 
@@ -27,4 +32,5 @@
   <div class="footer-copyright">
     This footer is made with <i class="fas fa-heart"></i> From Jeremy
   </div>
+
 </div>

@@ -1,12 +1,20 @@
 <div>
-<head> Cocktails </head>
+<h1> Cocktails </h1>
 
-<ul>
- <h1> <% @cocktails.each do |cocktail| %> </h1>
-    <li><%= link_to cocktail[:name], cocktail_path(cocktail) %></li>
+ <% @cocktails.each do |cocktail| %>
+ <%= cl_image_tag cocktail.photo %>
+ <img src="<%= cl_image_path cocktail.photo %> " alt="">
+  <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('<%= cl_image_path cocktail.photo, height: 300, width: 400, crop: :fill %>')">
+  C
+    <%= link_to cocktail.name, cocktail_path(cocktail) %>
+</div>
   <% end %>
-</ul>
+
 </div>
 
+<%= link_to "New cocktail", new_cocktail_path  %>
+<!--
 <img alt="Image result for cocktail image for html"" class="n3VNCb" src="https://www.seriouseats.com/recipes/images/2015/10/20150727-NuttyMartinez-Cocktail-Elana-Lepkowski.jpg" data-noaft="1" jsname="HiaYvf" jsaction="load:XAeZkd;" style="width: 400px; height: 300px; margin: 0px;">
 
+
+ -->
