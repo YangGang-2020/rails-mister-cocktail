@@ -1,6 +1,6 @@
 <h1>new doses!</h1>
 
-<%= simple_form_for [@dose.cocktail] do |f| %>
+<%= simple_form_for [@dose.cocktai, @dose] do |f| %>
   <%= f.input :doses %>
   <%= f.association :doses %>
   <%= f.button :submit %>
