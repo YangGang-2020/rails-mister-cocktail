@@ -8,6 +8,7 @@
 
 Ingredient.create(name: "lemon")
 lemon = Ingredient.find_by(name: "lemon")
+
 Ingredient.create(name: "ice")
 Ingredient.create(name: "mint leaves")
 
