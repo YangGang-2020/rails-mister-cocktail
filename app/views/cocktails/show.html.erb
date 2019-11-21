@@ -1,21 +1,15 @@
 <div class="background-red">
-
-<img src="" alt="Cocktail">
-
-<h1>More infos on <%= @cocktail[:name] %></h1>
-<p> Add this:
-  <% @cocktail.doses.each do |dose|%>
+<!--   <img src="" alt="Cocktail"> -->
+  <h1>More infos on <%= @cocktail.name %></h1>
+  <p> Add this:
+    <% @cocktail.doses.each do |dose|%>
     <%= dose.description %>  <%= dose.ingredient.name %>
-    <%= link_to "Delete dose", dose_path(dose), method: "delete" %>
-  <% end %>
-
+    <%= link_to "Delete dose", dose_path(dose), method: :delete %>
+    <% end %>
   </p>
-
-<%= link_to "back to cocktails", cocktails_path %>
-
-
+  <%= link_to "add a dose", new_cocktail_dose_path(@cocktail) %>
+  <%= link_to "back to cocktails", cocktails_path %>
 </div>
-
 <p>
   <span id="banner-typed-text"></span>
 </p>
